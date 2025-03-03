@@ -1,0 +1,159 @@
+.chat-container {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 50;
+  }
+  
+  /* Chat toggle button styles */
+  .chat-button {
+    background-color: #4f46e5;
+    color: white;
+    border-radius: 9999px;
+    padding: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .chat-button:hover {
+    background-color: #4338ca;
+  }
+  
+  .chat-button svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  /* Chatbox styles */
+  .chatbox {
+    position: absolute;
+    bottom: 4rem;
+    right: 0;
+    width: 24rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+  }
+  
+  /* Header styles */
+  .chat-header {
+    background-color: #4f46e5;
+    padding: 1rem;
+    color: white;
+  }
+  
+  .header-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  
+  .header-subtitle {
+    font-size: 0.875rem;
+    opacity: 0.9;
+  }
+  
+  /* Chat content area */
+  .chat-content {
+    height: 24rem;
+    overflow-y: auto;
+    padding: 1rem;
+  }
+  
+  .question-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  /* Question item styles */
+  .question-item {
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  
+  .question-button {
+    width: 100%;
+    padding: 0.75rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #374151;
+    transition: background-color 0.2s;
+  }
+  
+  .question-button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  /* Sub-options styles */
+  .sub-options {
+    background-color: white;
+    border-top: 1px solid #f3f4f6;
+  }
+  
+  .sub-option-button {
+    width: 100%;
+    padding: 0.5rem;
+    padding-left: 1.5rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #4b5563;
+    font-size: 0.875rem;
+    transition: background-color 0.2s;
+  }
+  
+  .sub-option-button:hover {
+    background-color: #f9fafb;
+  }
+  
+  .sub-option-content {
+    padding: 0.75rem;
+    padding-left: 2rem;
+    background-color: #eef2ff;
+    font-size: 0.875rem;
+    color: #4b5563;
+    border-top: 1px solid #f3f4f6;
+  }
+  
+  /* Icons */
+  .chevron-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #6b7280;
+  }
+  
+  .sub-option-icon {
+    width: 1rem;
+    height: 1rem;
+    color: #9ca3af;
+  }
+  
+  /* Footer styles */
+  .chat-footer {
+    border-top: 1px solid #e5e7eb;
+    padding: 0.75rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  /* Utility classes */
+  .hidden {
+    display: none;
+  }
