@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../CSS/Navbar.css';
+import logo from '../images/DevSPR.jpg';
 
 const Navbar = () => {
     const [searchQuery, setSearchQuery] = useState('');
@@ -14,7 +15,7 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg sticky-top custom-navbar">
             <Link to="/" className="navbar-brand d-flex align-items-center">
-                <img src='../images/DevSPR.jpg' alt="Logo" className="brand-logo" />
+                <img src={logo} alt="Logo" className="brand-logo" />
                 <h1 className="m-0 text-authentic">Developers Kite</h1>
             </Link>
             <button className="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
